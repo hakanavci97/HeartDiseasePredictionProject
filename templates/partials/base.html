@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+{% load static %}
+<html>
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <title></title>
+  <meta name="description" content="" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link href="{% static 'css/bootstrap.min.css' %}" rel="stylesheet" id="bootstrap-css" />
+  <script src="{% static 'css/bootstrap.min.js' %}"></script>
+  <script src="{% static 'css/jquery.min.js' %}"></script>
+  <link  href="{% static 'css/base.css' %}" rel="stylesheet" type="text/css" ></link>
+  <link  href="{% static 'css/result.css' %}" rel="stylesheet" type="text/css" ></link>
+  <link  href="{% static 'css/scroll.css' %}" rel="stylesheet" type="text/css" ></link>
+</head>
+<body class="bg">
+  {% include 'partials/navbar.html' %}
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col">
+        {% include 'partials/1.html' %}
+      </div>
+      <div class="col">
+        {% include 'partials/2.html' %}
+      </div>
+      <div class="col">
+        {% include 'partials/3.html' %}
+      </div>
+    </div>
+  </div>
+  </div>
+</body>
+</html>

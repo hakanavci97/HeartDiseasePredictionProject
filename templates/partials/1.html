@@ -1,0 +1,137 @@
+<div class="scrollbar scrollbar-primary">
+    <div class="force-overflow">
+  <form class="form-inline" action="HeartDiseasePredictionResult" method="GET">
+    <div class="container">
+      <label class="my-1 mr-sm-2">Öznitelik Seçimi</label>
+    </div>
+        <label class="my-1 mr-sm-2">Cinsiyet</label>
+        <select class="custom-select my-1 mr-sm-2" id="inlineFormCustomSelectPref" required="required" name="gender">
+          <option hidden></option>
+          <option value="0">Kadın</option>
+          <option value="1">Erkek</option>
+        </select>
+        <label class="my-1 mr-sm-2">VKİ</label>
+        <input type="text" class="custom-select my-1 mr-sm-2" id="inputBMI" required="required" name="bmi">
+        
+        <label class="my-1 mr-sm-2">Sigara Kullanıyor Musunuz?</label>
+        <select class="custom-select my-1 mr-sm-2" id="inlineFormCustomSelectPref" required="required" name='smoker'>
+          <option hidden></option>
+          <option value="1">Evet</option>
+          <option value="0">Hayır</option>
+        </select>
+        <label class="my-1 mr-sm-2">Alkol Kullanıyor Musunuz?</label>
+        <select class="custom-select my-1 mr-sm-2" id="inlineFormCustomSelectPref" required="required" name="alcoholDrinking">
+          <option hidden></option>
+          <option value="1">Evet</option>
+          <option value="0">Hayır</option>
+        </select>
+
+        <label class="my-1 mr-sm-2">Daha Önce Felç Geçirdiniz mi?</label>
+        <select class="custom-select my-1 mr-sm-2" id="inlineFormCustomSelectPref" required="required" name="stroke">
+          <option hidden></option>
+          <option value="1">Evet</option>
+          <option value="0">Hayır</option>
+        </select>
+
+        <label class="my-1 mr-sm-2">Son 30 gün içinde kaç gün boyunca fiziksel sağlığınız iyi değildi?</label>
+        <input type="text" class="custom-select my-1 mr-sm-2" id="inputFiziksel" required="required" name="physicalHealth">
+
+        <label class="my-1 mr-sm-2">Son 30 gün içinde kaç gün boyunca ruhsal sağlığınız iyi değildi?</label>
+        <input type="text" class="custom-select my-1 mr-sm-2" id="inputMental" required="required" name="mentalHealth">
+        
+        <label class="my-1 mr-sm-2">Yürümekte veya merdiven çıkmakta ciddi güçlük çekiyor musunuz?</label>
+        <select class="custom-select my-1 mr-sm-2" id="inlineFormCustomSelectPref" required="required" name="diffWalking">
+          <option hidden></option>
+          <option value="1">Evet</option>
+          <option value="0">Hayır</option>
+        </select>
+
+        <label class="my-1 mr-sm-2">Yaş Aralığınız Nedir?</label>
+        <select class="custom-select my-1 mr-sm-2" id="inlineFormCustomSelectPref" required="required" name="ageCategory">
+          <option hidden></option>
+          <option value="0">18-24</option>
+          <option value="1">25-29</option>
+          <option value="2">30-34</option>
+          <option value="3">35-39</option>
+          <option value="4">40-44</option>
+          <option value="5">45-49</option>
+          <option value="6">50-54</option>
+          <option value="7">55-59</option>
+          <option value="8">60-64</option>
+          <option value="9">65-69</option>
+          <option value="10">70-74</option>
+          <option value="11">75-79</option>
+          <option value="12">80 or olde</option>
+        </select>
+        
+        <label class="my-1 mr-sm-2">Irk</label>
+        <select class="custom-select my-1 mr-sm-2" id="inlineFormCustomSelectPref" required="required" name="race">
+          <option hidden></option>
+          <option value="0">Amerikan Yerlisi/Alaska Yerlisi</option>
+          <option value="1">Asya</option>
+          <option value="2">Siyah</option>
+          <option value="3">İspanyol</option>
+          <option value="4">Diğer</option>
+          <option value="5">Beyaz</option>
+        </select>
+
+        <label class="my-1 mr-sm-2">Hiç şeker hastalığınız oldu mu?</label>
+        <select class="custom-select my-1 mr-sm-2" id="inlineFormCustomSelectPref" required="required" name="diabetic">
+          <option hidden></option>
+          <option value="0">Hayır</option>
+          <option value="1">Hayır, Sınırda</option>
+          <option value="2">Evet</option>
+          <option value="3">Evet Hamilelik Sırasında</option>
+        </select>
+
+        <label class="my-1 mr-sm-2">Son bir ay içinde herhangi bir spor yaptınız mı (koşu, bisiklet vb.)?</label>
+        <select class="custom-select my-1 mr-sm-2" id="inlineFormCustomSelectPref" required="required" name="physicalActivity">
+          <option hidden></option>
+          <option value="1">Evet</option>
+          <option value="0">Hayır</option>
+        </select>
+
+        <label class="my-1 mr-sm-2">Genel sağlığınızı nasıl tanımlayabilirsiniz?</label>
+        <select class="custom-select my-1 mr-sm-2" id="inlineFormCustomSelectPref" required="required" name="genHealth">
+          <option hidden></option>
+          <option value="0">Harika</option>
+          <option value="1">Orta</option>
+          <option value="2">İyi</option>
+          <option value="3">Zayıf</option>
+          <option value="4">Çok İyi</option>
+        </select>
+
+        <label class="my-1 mr-sm-2">Ortalama kaç saat uyuyorsunuz?</label>
+        <input type="text" class="custom-select my-1 mr-sm-2" id="inputUyku" required="required" name="sleepTime"> 
+
+
+        <label class="my-1 mr-sm-2">Astımınız var mı?</label>
+        <select class="custom-select my-1 mr-sm-2" id="inlineFormCustomSelectPref" required="required" name="asthma">
+          <option hidden></option>
+          <option value="1">Evet</option>
+          <option value="0">Hayır</option>
+        </select>
+
+        <label class="my-1 mr-sm-2">Böbrek hastalığınız var mı?</label>
+        <select class="custom-select my-1 mr-sm-2" id="inlineFormCustomSelectPref" required="required" name="kidneyDisease">
+          <option hidden></option>
+          <option value="1">Evet</option>
+          <option value="0">Hayır</option>
+        </select>
+
+
+        <label class="my-1 mr-sm-2">Cilt kanseriniz var mı?</label>
+        <select class="custom-select my-1 mr-sm-2" id="inlineFormCustomSelectPref" required="required" name="skinCancer">
+          <option hidden></option>
+          <option value="1">Evet</option>
+          <option value="0">Hayır</option>
+        </select>
+        
+    
+        <div class="container" >
+          <center> <button type="submit" class="btn btn-success" value="HeartDiseasePredictionResult">Tahmin</button></center>
+      </div>
+    
+    </form>
+  </div>
+</div>

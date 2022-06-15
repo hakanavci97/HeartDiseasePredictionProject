@@ -1,0 +1,11 @@
+.result{
+    font-size: 50px;
+
+    text-align: center;
+    
+}
+.divResult{
+    width: 320px;
+    margin: 60px auto;
+    border: 5px dotted #880808;
+}
